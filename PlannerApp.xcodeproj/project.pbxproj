@@ -12,6 +12,9 @@
 		055DB2A71FE6E1C300458204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055DB2A51FE6E1C300458204 /* Main.storyboard */; };
 		055DB2A91FE6E1C300458204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055DB2A81FE6E1C300458204 /* Assets.xcassets */; };
 		055DB2AC1FE6E1C300458204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055DB2AA1FE6E1C300458204 /* LaunchScreen.storyboard */; };
+		055DB2B41FE6E2A400458204 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 055DB2B31FE6E2A400458204 /* GoogleService-Info.plist */; };
+		055DB2B61FE715AF00458204 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DB2B51FE715AF00458204 /* LoginViewController.swift */; };
+		461BD196F566A7C9C7BF9271 /* Pods_PlannerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9DFACA32EC25D662A26CFB /* Pods_PlannerApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		055DB2A81FE6E1C300458204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		055DB2AB1FE6E1C300458204 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		055DB2AD1FE6E1C300458204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		055DB2B31FE6E2A400458204 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		055DB2B51FE715AF00458204 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		431FB23515D0B83E7579E1D2 /* Pods-PlannerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlannerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlannerApp/Pods-PlannerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4D0204895716D687F394D617 /* Pods-PlannerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlannerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlannerApp/Pods-PlannerApp.release.xcconfig"; sourceTree = "<group>"; };
+		6E9DFACA32EC25D662A26CFB /* Pods_PlannerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlannerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461BD196F566A7C9C7BF9271 /* Pods_PlannerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				055DB2A01FE6E1C300458204 /* PlannerApp */,
 				055DB29F1FE6E1C300458204 /* Products */,
+				98DFABE58FEDD57196A38D91 /* Pods */,
+				BC68E5CF77DD97527AF6F14A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +65,57 @@
 		055DB2A01FE6E1C300458204 /* PlannerApp */ = {
 			isa = PBXGroup;
 			children = (
-				055DB2A11FE6E1C300458204 /* AppDelegate.swift */,
-				055DB2A31FE6E1C300458204 /* ViewController.swift */,
-				055DB2A51FE6E1C300458204 /* Main.storyboard */,
-				055DB2A81FE6E1C300458204 /* Assets.xcassets */,
-				055DB2AA1FE6E1C300458204 /* LaunchScreen.storyboard */,
+				055DB2B91FE7160200458204 /* Controller */,
+				055DB2B81FE715F900458204 /* View */,
+				055DB2B71FE715F100458204 /* Model */,
+				055DB2B31FE6E2A400458204 /* GoogleService-Info.plist */,
 				055DB2AD1FE6E1C300458204 /* Info.plist */,
 			);
 			path = PlannerApp;
+			sourceTree = "<group>";
+		};
+		055DB2B71FE715F100458204 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				055DB2A11FE6E1C300458204 /* AppDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		055DB2B81FE715F900458204 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				055DB2A81FE6E1C300458204 /* Assets.xcassets */,
+				055DB2A51FE6E1C300458204 /* Main.storyboard */,
+				055DB2AA1FE6E1C300458204 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		055DB2B91FE7160200458204 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				055DB2B51FE715AF00458204 /* LoginViewController.swift */,
+				055DB2A31FE6E1C300458204 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		98DFABE58FEDD57196A38D91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				431FB23515D0B83E7579E1D2 /* Pods-PlannerApp.debug.xcconfig */,
+				4D0204895716D687F394D617 /* Pods-PlannerApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC68E5CF77DD97527AF6F14A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E9DFACA32EC25D662A26CFB /* Pods_PlannerApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 055DB2B01FE6E1C300458204 /* Build configuration list for PBXNativeTarget "PlannerApp" */;
 			buildPhases = (
+				127334A001D07C5D43DB589A /* [CP] Check Pods Manifest.lock */,
 				055DB29A1FE6E1C300458204 /* Sources */,
 				055DB29B1FE6E1C300458204 /* Frameworks */,
 				055DB29C1FE6E1C300458204 /* Resources */,
+				77DFE1664F72CB7D1CA4BF09 /* [CP] Embed Pods Frameworks */,
+				188F492A838DFA929924BAD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				055DB2AC1FE6E1C300458204 /* LaunchScreen.storyboard in Resources */,
+				055DB2B41FE6E2A400458204 /* GoogleService-Info.plist in Resources */,
 				055DB2A91FE6E1C300458204 /* Assets.xcassets in Resources */,
 				055DB2A71FE6E1C300458204 /* Main.storyboard in Resources */,
 			);
@@ -131,11 +189,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		127334A001D07C5D43DB589A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlannerApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		188F492A838DFA929924BAD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlannerApp/Pods-PlannerApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77DFE1664F72CB7D1CA4BF09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PlannerApp/Pods-PlannerApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlannerApp/Pods-PlannerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		055DB29A1FE6E1C300458204 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				055DB2B61FE715AF00458204 /* LoginViewController.swift in Sources */,
 				055DB2A41FE6E1C300458204 /* ViewController.swift in Sources */,
 				055DB2A21FE6E1C300458204 /* AppDelegate.swift in Sources */,
 			);
@@ -272,13 +391,14 @@
 		};
 		055DB2B11FE6E1C300458204 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431FB23515D0B83E7579E1D2 /* Pods-PlannerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H36FGN369H;
 				INFOPLIST_FILE = PlannerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LL.PlannerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LL.PlannerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -287,13 +407,14 @@
 		};
 		055DB2B21FE6E1C300458204 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D0204895716D687F394D617 /* Pods-PlannerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H36FGN369H;
 				INFOPLIST_FILE = PlannerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LL.PlannerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LL.PlannerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
